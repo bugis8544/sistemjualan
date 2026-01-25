@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NNKP9QKWN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7NNKP9QKWN');
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>SistemJualan - Jasa Pembuatan Landing Page UMKM & Website Jualan Otomatis</title>
+    <meta name="description" content="Tingkatkan omzet UMKM Anda dengan SistemJualan. Jasa pembuatan landing page edukatif yang bekerja 24 jam sebagai mesin penjual otomatis.">
+    <meta name="keywords" content="jasa landing page umkm, jasa pembuatan landing page, jasa website umkm, sistem jualan otomatis, bikin website bisnis kecil">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+            <div class="font-bold text-xl md:text-2xl text-blue-700 flex items-center gap-1 italic tracking-tighter">
+                <i data-lucide="zap" class="bg-blue-700 text-white p-1 rounded-lg shadow-sm w-8 h-8"></i>
+                <span>SistemJualan</span>
+            </div>
+            <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20untuk%20konsultasi%20gratis%20mengenai%20pembuatan%20Landing%20Page%20UMKM.%20Boleh%20bantu%20jelaskan%20lebih%20lanjut%3F" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all flex items-center gap-2 shadow-md shadow-green-100">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Konsultasi Gratis</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative pt-12 pb-20 px-6 overflow-hidden bg-gradient-to-b from-blue-50/50 to-white">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 text-center lg:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-bold text-blue-700 bg-blue-100 rounded-full">
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <span>SISTEMJUALAN: MITRA DIGITAL UMKM INDONESIA</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-6 text-slate-900">
+                    SistemJualan: Jasa Pembuatan Landing Page UMKM yang <span class="text-blue-700 underline decoration-blue-200">Menjual Secara Otomatis</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Dapatkan <span class="font-bold text-slate-900 italic">SistemJualan</span> yang tidak hanya cantik, tapi bekerja 24 jam penuh untuk mengedukasi dan meyakinkan calon pembeli Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#paket" class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-2xl font-black text-lg shadow-xl shadow-blue-100 transition-all flex items-center justify-center gap-2 group">
+                        Bangun Sistem Jualan Saya
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative w-full max-w-lg lg:max-w-none">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format&fit=crop" 
+                     alt="SistemJualan membantu UMKM jualan online secara otomatis" 
+                     class="rounded-[2.5rem] shadow-2xl border-4 border-white animate-float w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SECTION PROBLEM AWARENESS -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-black mb-4 italic">Masalah Umum: Kenapa Iklan Banyak Tapi Closing Sedikit?</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg">Seringkali masalahnya bukan di produk Anda, tapi karena Anda belum memiliki <span class="font-semibold italic text-slate-800">SistemJualan</span> yang terstruktur.</p>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-all">
+                <i data-lucide="clock" class="text-red-500 mb-6 mx-auto md:mx-0 w-12 h-12"></i>
+                <h3 class="font-black text-xl mb-3">Respon Manual Lambat</h3>
+                <p class="text-slate-600 leading-relaxed">Pelanggan sering "kabur" karena Anda baru sempat membalas chat saat mereka sudah tidak tertarik lagi.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-all">
+                <i data-lucide="smartphone" class="text-orange-500 mb-6 mx-auto md:mx-0 w-12 h-12"></i>
+                <h3 class="font-black text-xl mb-3">Info Berulang-ulang</h3>
+                <p class="text-slate-600 leading-relaxed">Tenaga Anda habis hanya untuk ngetik harga, ongkir, dan testimoni yang sama ke ratusan chat.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-all">
+                <i data-lucide="alert-circle" class="text-slate-400 mb-6 mx-auto md:mx-0 w-12 h-12"></i>
+                <h3 class="font-black text-xl mb-3">Gak Punya "Rumah" Digital</h3>
+                <p class="text-slate-600 leading-relaxed">Tanpa website resmi, pembeli sering ragu apakah bisnis Anda terpercaya atau hanya jualan musiman.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECTION EDUKASI -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black mb-8 text-center underline underline-offset-8 decoration-blue-200">SistemJualan vs Website Biasa: Apa Bedanya?</h2>
+            <div class="max-w-none">
+                <p class="text-lg text-slate-700 leading-relaxed mb-6 text-center">
+                    Banyak jasa pembuatan website hanya memikirkan tampilan. Di <span class="font-bold">SistemJualan</span>, kami membangun alur persuasi. Kami menyebutnya <span class="text-blue-700 font-bold italic">Landing Page Edukatif</span>.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-10">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                        <h4 class="font-bold text-blue-700 mb-4 flex items-center gap-2 italic">
+                            <i data-lucide="check-circle-2" class="w-5 h-5"></i> Website Biasa
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Isinya hanya Visi, Misi, dan Galeri yang membosankan. Pembeli masuk lalu bingung harus ngapain.</p>
+                    </div>
+                    <div class="bg-blue-700 p-8 rounded-3xl shadow-xl text-white">
+                        <h4 class="font-bold mb-4 flex items-center gap-2 italic">
+                            <i data-lucide="zap" class="text-yellow-400 w-5 h-5"></i> SistemJualan
+                        </h4>
+                        <p class="text-sm text-blue-100 leading-relaxed italic">Dirancang khusus untuk membimbing pembeli dari rasa penasaran sampai klik tombol order ke WhatsApp Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: PAKET UMKM SIAP DITEMUKAN -->
+    <section class="py-24 px-6 bg-white border-t border-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-1 order-2 lg:order-1">
+                    <div class="bg-slate-50 rounded-[3rem] p-8 md:p-12 border border-slate-100 shadow-inner relative overflow-hidden group">
+                        <div class="absolute -top-10 -right-10 opacity-5 group-hover:rotate-12 transition-transform duration-700"><i data-lucide="map-pin" class="w-48 h-48"></i></div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-4 italic">“Paket UMKM Siap Ditemukan”</h3>
+                        <p class="text-slate-600 mb-8 leading-relaxed">
+                            Bagi UMKM tahap awal, yang terpenting adalah <span class="font-bold">keberadaan bisnis</span> di dunia digital. Paket ini adalah titik paling masuk akal untuk memulai perjalanan digital Anda tanpa kerumitan teknis.
+                        </p>
+                        
+                        <div class="space-y-4 mb-10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg shrink-0 flex items-center justify-center"><i data-lucide="map" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Setup Google Business Profile</h4>
+                                    <p class="text-sm text-slate-500">Agar toko atau jasa Anda muncul secara resmi di Google Maps dan pencarian lokal.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg shrink-0 flex items-center justify-center"><i data-lucide="layout" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Landing Page Sederhana (1 Halaman)</h4>
+                                    <p class="text-sm text-slate-500">Halaman info produk yang ringkas sebagai pengganti brosur fisik yang mudah dibagikan.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg shrink-0 flex items-center justify-center"><i data-lucide="message-square" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Integrasi WhatsApp</h4>
+                                    <p class="text-sm text-slate-500">Tombol klik langsung chat untuk mempermudah pelanggan menghubungi Anda.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-white rounded-2xl border border-slate-100 mb-8">
+                            <h4 class="font-bold text-blue-700 mb-2 flex items-center gap-2"><i data-lucide="lightbulb" class="w-4 h-4"></i> Manfaat Bisnis:</h4>
+                            <p class="text-sm text-slate-600">Pelanggan jadi mudah menemukan lokasi Anda, percaya bahwa bisnis Anda asli, dan bisa langsung bertanya lewat jalur komunikasi favorit mereka.</p>
+                        </div>
+
+                        <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20dengan%20Paket%20UMKM%20Siap%20Ditemukan.%20Boleh%20bantu%20cek%20kelayakan%20usaha%20saya%3F" class="w-full bg-slate-900 text-white py-4 rounded-xl font-black text-lg hover:bg-blue-700 transition-all text-center flex items-center justify-center gap-2">
+                            Cek Kelayakan Usaha Saya <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </a>
+                        
+                        <p class="mt-6 text-[10px] text-slate-400 text-center italic leading-tight">
+                            *Paket ini ditujukan sebagai langkah awal. Untuk kebutuhan penjualan yang lebih kompleks, tersedia paket lanjutan.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 order-1 lg:order-2">
+                    <h2 class="text-3xl md:text-5xl font-black mb-8 leading-[1.1] text-slate-900">
+                        Membangun <span class="text-blue-700">Fondasi Digital</span> yang Solid untuk UMKM Lokal
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        Sebelum bicara tentang iklan besar-besaran, bisnis Anda harus bisa "ditemukan" terlebih dahulu. Paket ini dirancang untuk UMKM yang baru beralih dari jualan offline ke online namun belum membutuhkan fitur sistem jualan yang rumit.
+                    </p>
+                    <div class="flex items-center gap-4 text-slate-500 text-sm italic">
+                        <i data-lucide="info" class="w-5 h-5 text-blue-500"></i>
+                        <span>Sangat cocok untuk jasa service, kedai kuliner, dan usaha rumahan.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECTION SOLUSI -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex-1">
+                <h2 class="text-3xl md:text-4xl font-black mb-6">Inilah Alasan Kenapa UMKM Memilih <span class="text-blue-700 underline decoration-blue-100">SistemJualan</span></h2>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                    Layanan <span class="font-bold italic underline underline-offset-4 decoration-blue-200">jasa pembuatan landing page UMKM</span> kami mencakup strategi jualan lengkap, bukan cuma coding.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex gap-4 font-bold text-slate-700 italic">
+                        <i data-lucide="check-circle-2" class="text-blue-700 shrink-0 w-6 h-6"></i>
+                        Copywriting yang diriset khusus sesuai target pembeli Anda.
+                    </li>
+                    <li class="flex gap-4 font-bold text-slate-700 italic">
+                        <i data-lucide="check-circle-2" class="text-blue-700 shrink-0 w-6 h-6"></i>
+                        Sistem loading secepat kilat (Fast Loading Optimization).
+                    </li>
+                    <li class="flex gap-4 font-bold text-slate-700 italic">
+                        <i data-lucide="check-circle-2" class="text-blue-700 shrink-0 w-6 h-6"></i>
+                        Integrasi WhatsApp yang sudah dioptimasi untuk closing.
+                    </li>
+                    <li class="flex gap-4 font-bold text-slate-700 italic">
+                        <i data-lucide="check-circle-2" class="text-blue-700 shrink-0 w-6 h-6"></i>
+                        Tampilan yang sangat nyaman dibuka lewat Handphone.
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 w-full bg-slate-900 rounded-[3rem] p-10 text-white relative shadow-2xl overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform"><i data-lucide="trending-up" class="w-32 h-32"></i></div>
+                <h3 class="text-2xl font-black mb-4 italic">Siap Naik Kelas?</h3>
+                <p class="mb-8 text-slate-400 italic font-medium leading-relaxed">Biarkan tim SistemJualan membangun aset digital Anda hari ini. Fokuslah jualan, biar sistem yang urus edukasi pembeli.</p>
+                <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20untuk%20konsultasi%20gratis%20mengenai%20pembuatan%20Landing%20Page%20UMKM.%20Boleh%20bantu%20jelaskan%20lebih%20lanjut%3F" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-black hover:bg-blue-500 transition-all inline-flex items-center gap-3 shadow-lg text-center justify-center">
+                    Saya Mau Sistem Ini <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION PAKET JASA -->
+    <section id="paket" class="py-24 px-6 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-slate-900 italic text-center mx-auto">Pilih Paket Sesuai Tahap Bisnis Anda</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">Investasi terbaik untuk membangun <span class="font-semibold text-slate-800">jasa website UMKM</span> yang berkelanjutan.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Starter -->
+                <div class="bg-white p-8 rounded-[2rem] border-2 border-slate-200 flex flex-col hover:border-blue-100 transition-all shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2 underline decoration-blue-200">Paket Starter</h3>
+                        <p class="text-slate-500 text-sm italic font-medium">Untuk UMKM yang baru mulai serius jualan online.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-slate-700 text-sm font-medium">
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> 1 Landing Page Fokus 1 Produk</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> Tombol WhatsApp Langsung</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> Mobile-Friendly & Profesional</li>
+                    </ul>
+                    <div class="mb-8 p-4 bg-slate-50 rounded-xl">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1 italic tracking-tighter">Estimasi Investasi</p>
+                        <p class="text-xl font-black text-slate-900 tracking-tight">750rb – 1,5jt</p>
+                    </div>
+                    <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20dengan%20Paket%20Starter.%20Bisa%20bantu%20jelaskan%20prosesnya%3F" class="w-full py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-bold text-center transition-all">Pilih Paket Starter</a>
+                </div>
+                <!-- Growth -->
+                <div class="bg-blue-700 p-8 rounded-[2rem] border-4 border-blue-100 flex flex-col relative shadow-2xl text-white transform lg:scale-105 z-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yellow-400 text-blue-900 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">TERLARIS</div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-black mb-2 underline decoration-blue-300">Paket Growth</h3>
+                        <p class="text-blue-100 text-sm italic font-medium tracking-tight">Sistem jualan yang meyakinkan & rapi.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-sm font-medium">
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-white shrink-0 w-5 h-5"></i> Copywriting Edukatif Lengkap</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-white shrink-0 w-5 h-5"></i> Integrasi WhatsApp + Form Filter</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-white shrink-0 w-5 h-5"></i> Siap Digunakan Untuk Beriklan</li>
+                    </ul>
+                    <div class="mb-8 p-4 bg-white/10 rounded-xl border border-white/20">
+                        <p class="text-xs font-bold text-blue-200 uppercase tracking-widest mb-1 italic tracking-tighter">Estimasi Investasi</p>
+                        <p class="text-xl font-black tracking-tight">2,5jt – 4jt</p>
+                    </div>
+                    <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20dengan%20Paket%20Growth%20(Terlaris).%20Bisa%20diskusi%20strategi%20bisnis%20saya%3F" class="w-full py-4 bg-white text-blue-700 hover:bg-blue-50 rounded-xl font-black text-center transition-all shadow-lg text-sm">Pilih Paket Growth</a>
+                </div>
+                <!-- Scale -->
+                <div class="bg-white p-8 rounded-[2rem] border-2 border-slate-200 flex flex-col hover:border-blue-100 transition-all shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2 underline decoration-blue-200">Paket Scale</h3>
+                        <p class="text-slate-500 text-sm italic font-medium tracking-tight">Membangun aset digital jangka panjang.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1 text-slate-700 text-sm font-medium">
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> Full Funnel & Landing Page Utama</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> Setup Tracking Iklan Lanjutan</li>
+                        <li class="flex gap-3"><i data-lucide="check-circle-2" class="text-blue-500 shrink-0 w-5 h-5"></i> Rekomendasi Strategi Digital</li>
+                    </ul>
+                    <div class="mb-8 p-4 bg-slate-50 rounded-xl">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1 italic tracking-tighter">Estimasi Investasi</p>
+                        <p class="text-xl font-black text-slate-900 tracking-tight">6jt – 10jt+</p>
+                    </div>
+                    <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20bisnis%20saya%20siap%20Scale%20Up.%20Saya%20ingin%20tanya%20mengenai%20Paket%20Scale%20terkait%20aset%20digital." class="w-full py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-bold text-center transition-all">Pilih Paket Scale</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECTION TRUST & PROOF -->
+    <section class="py-24 px-6 bg-white text-center">
+        <div class="max-w-4xl mx-auto bg-blue-50 rounded-[3rem] p-10 md:p-16 border border-blue-100 relative shadow-inner overflow-hidden">
+            <div class="absolute top-0 left-0 p-10 opacity-5 pointer-events-none"><i data-lucide="shield-check" class="w-64 h-64"></i></div>
+            <div class="relative z-10">
+                <h2 class="text-2xl md:text-3xl font-black mb-10 italic">Mengapa UMKM Nyaman Bersama SistemJualan?</h2>
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-20 h-20 bg-slate-300 rounded-full shrink-0 border-4 border-white shadow-md overflow-hidden">
+                        <img src="https://i.pravatar.cc/100?u=1" alt="Testimoni" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left italic">
+                        <p class="text-slate-700 text-lg leading-relaxed mb-4">"Berkat SistemJualan, pembeli saya sekarang sudah 'ter-edukasi' sebelum chat. Saya gak perlu lagi jelasin hal yang sama berkali-kali. Benar-benar hemat tenaga!"</p>
+                        <p class="font-black text-slate-900 not-italic">— Mas Wahyu, Owner Kuliner Lokal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECTION FAQ -->
+    <section class="py-24 px-6 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-black mb-10 text-center text-center mx-auto">Tanya Jawab Seputar SistemJualan</h2>
+            <div class="space-y-2" id="faq-container">
+                <div class="faq-item bg-white border-b border-slate-200 py-4 px-6 rounded-xl mb-2 cursor-pointer transition-all hover:bg-blue-50/30">
+                    <div class="flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-slate-800">Apa yang membedakan SistemJualan dengan jasa lain?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-blue-700 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-3 text-slate-600 leading-relaxed text-sm md:text-base">
+                        Kami fokus pada hasil bisnis (konversi), bukan hanya desain. Kami membantu Anda meriset kata-kata jualan yang pas agar pembeli yakin untuk order.
+                    </div>
+                </div>
+                <div class="faq-item bg-white border-b border-slate-200 py-4 px-6 rounded-xl mb-2 cursor-pointer transition-all hover:bg-blue-50/30">
+                    <div class="flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-slate-800">Berapa lama proses pengerjaannya?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-blue-700 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-3 text-slate-600 leading-relaxed text-sm md:text-base">
+                        Rata-rata 3-7 hari kerja tergantung paket yang dipilih dan kesiapan data produk Anda.
+                    </div>
+                </div>
+                <div class="faq-item bg-white border-b border-slate-200 py-4 px-6 rounded-xl mb-2 cursor-pointer transition-all hover:bg-blue-50/30">
+                    <div class="flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-slate-800">Apakah saya bisa ganti harga sendiri nanti?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-blue-700 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-3 text-slate-600 leading-relaxed text-sm md:text-base">
+                        Tentu. SistemJualan memberikan akses dan panduan sederhana agar Anda bisa mengubah teks atau harga produk di masa depan secara mandiri.
+                    </div>
+                </div>
+                <div class="faq-item bg-white border-b border-slate-200 py-4 px-6 rounded-xl mb-2 cursor-pointer transition-all hover:bg-blue-50/30">
+                    <div class="flex justify-between items-center text-left">
+                        <h3 class="text-lg font-bold text-slate-800">Bagaimana jika saya gaptek (gagap teknologi)?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-blue-700 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-3 text-slate-600 leading-relaxed text-sm md:text-base">
+                        Jangan khawatir. Fokus kami adalah UMKM. Semua alur dibuat semudah mungkin, dan kami akan bimbing sampai sistem aktif.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FINAL CTA -->
+    <section class="py-28 px-6 bg-blue-700 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 60px 60px;"></div>
+        </div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight">Berikan Bisnis Anda <br/><span class="text-yellow-400 italic">SistemJualan</span> Yang Pantas</h2>
+            <p class="text-xl text-blue-100 mb-12 italic font-medium leading-relaxed max-w-2xl mx-auto">
+                "Sistem yang baik akan mendatangkan pembeli lebih sering, tanpa menyita waktu Anda lebih banyak."
+            </p>
+            <a href="https://wa.me/6285172440469?text=Halo%20SistemJualan%2C%20saya%20tertarik%20untuk%20konsultasi%20strategi%20dan%20pembuatan%20sistem%20jualan%20digital.%20Boleh%20bantu%3F" class="inline-flex items-center gap-4 bg-green-500 hover:bg-green-400 text-white px-10 py-5 rounded-3xl font-black text-2xl shadow-2xl transition-all transform hover:-translate-y-2 active:scale-95 text-center justify-center">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+                Mulai Diskusi Strategi
+            </a>
+            <p class="mt-8 text-blue-200 text-sm font-bold flex items-center justify-center gap-2 italic">
+                <i data-lucide="shield-check" class="w-5 h-5"></i> Konsultasi Tanpa Paksaan – Bangun Bisnis Bersama.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-white border-t border-slate-100 text-center md:text-left">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="font-black text-2xl text-blue-700 flex items-center gap-1 italic tracking-tighter">
+                <i data-lucide="zap" class="w-6 h-6 fill-current"></i>
+                <span>SistemJualan</span>
+            </div>
+            <div class="text-slate-400 text-sm italic font-medium">
+                Membantu UMKM Indonesia naik kelas melalui sistem jualan digital yang edukatif.
+            </div>
+            <p class="text-slate-400 text-[10px] uppercase font-bold tracking-widest">© 2024 SistemJualan Digital Group</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
